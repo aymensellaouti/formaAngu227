@@ -1,11 +1,17 @@
+<div class="aymen">
+
+  Test
+
+</div>
+
 <input
   class="form-control"
   type="text"
+  [(ngModel)]="couleur"
   #color
   value="red"
-  (change)="changeColor(color.value)"
->
+ >
 
-<div [style.backgroundColor]="couleur">
+<div (click)="sendDataToParent()" [style.backgroundColor]="couleur">
   Bonjour
 </div>

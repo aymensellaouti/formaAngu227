@@ -15,4 +15,7 @@ export class AppComponent {
   logInput(maVaribale) {
     console.log(maVaribale);
   }
+  getSonInfo(data) {
+    alert(data);
+  }
 }
