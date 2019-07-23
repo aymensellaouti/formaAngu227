@@ -20,6 +20,7 @@ import { DefaultImagePipe } from './default-image.pipe';
 import { TodosComponent } from './todos/todos.component';
 import {LoggerService} from './services/logger.service';
 import {TodoService} from './services/todo.service';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import {TodoService} from './services/todo.service';
     RainbowComponent,
     RainbowDirective,
     DefaultImagePipe,
-    TodosComponent
+    TodosComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
