@@ -7,13 +7,31 @@ import { FirstComponent } from './first/first.component';
 import { ColorComponent } from './color/color.component';
 import {FormsModule} from '@angular/forms';
 import { CardComponent } from './card/card.component';
+import { CvComponent } from './cv/cv/cv.component';
+import { ItemComponent } from './cv/item/item.component';
+import { DetailComponent } from './cv/detail/detail.component';
+import { ListeComponent } from './cv/liste/liste.component';
+import { NgStyleComponent } from './directive/ng-style/ng-style.component';
+import { NgClassComponent } from './directive/ng-class/ng-class.component';
+import { HighlightDirective } from './directive/highlight.directive';
+import { RainbowComponent } from './directive/rainbow/rainbow.component';
+import { RainbowDirective } from './directive/rainbow.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
     ColorComponent,
-    CardComponent
+    CardComponent,
+    CvComponent,
+    ItemComponent,
+    DetailComponent,
+    ListeComponent,
+    NgStyleComponent,
+    NgClassComponent,
+    HighlightDirective,
+    RainbowComponent,
+    RainbowDirective
   ],
   imports: [
     BrowserModule,
