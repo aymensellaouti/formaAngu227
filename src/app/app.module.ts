@@ -21,6 +21,9 @@ import { TodosComponent } from './todos/todos.component';
 import {LoggerService} from './services/logger.service';
 import {TodoService} from './services/todo.service';
 import { HeaderComponent } from './header/header.component';
+import { RouteSimulatorComponent } from './route-simulator/route-simulator.component';
+import { CvdetailComponent } from './cv/cvdetail/cvdetail.component';
+import { Nf400Component } from './nf400/nf400.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { HeaderComponent } from './header/header.component';
     RainbowDirective,
     DefaultImagePipe,
     TodosComponent,
-    HeaderComponent
+    HeaderComponent,
+    RouteSimulatorComponent,
+    CvdetailComponent,
+    Nf400Component
   ],
   imports: [
     BrowserModule,
