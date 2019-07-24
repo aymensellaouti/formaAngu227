@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {NgForm} from '@angular/forms';
+import {SecuritySericeService} from '../security-serice.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,12 +10,24 @@ import {NgForm} from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private securityService: SecuritySericeService,
+    private router: Router
+  ) { }
 
   ngOnInit() {
   }
 
   login(formulaire: NgForm) {
-    console.log(formulaire);
+    this.securityService.login(formulaire.value).subscribe(
+      (data) => {
+        localStorage.setItem('token',data['id']);
+        const link = [''];
+        this.router.navigate(link);
+      },
+      (erreur) => {
+        console.log(erreur);
+      }
+    );
   }
 }
