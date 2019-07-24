@@ -24,6 +24,11 @@ import { HeaderComponent } from './header/header.component';
 import { RouteSimulatorComponent } from './route-simulator/route-simulator.component';
 import { CvdetailComponent } from './cv/cvdetail/cvdetail.component';
 import { Nf400Component } from './nf400/nf400.component';
+import { AddPersonneComponent } from './cv/add-personne/add-personne.component';
+import { LoginComponent } from './login/login.component';
+import { ObservableComponent } from './observable/observable.component';
+import { TesthttpComponent } from './testhttp/testhttp.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -45,12 +50,17 @@ import { Nf400Component } from './nf400/nf400.component';
     HeaderComponent,
     RouteSimulatorComponent,
     CvdetailComponent,
-    Nf400Component
+    Nf400Component,
+    AddPersonneComponent,
+    LoginComponent,
+    ObservableComponent,
+    TesthttpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

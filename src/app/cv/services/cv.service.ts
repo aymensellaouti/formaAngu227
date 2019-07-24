@@ -19,4 +19,9 @@ export class CvService {
   findPersonneById(id) {
     return this.personnes.find(personne => personne.id == id);
   }
+  addPersonne(personne: Personne) {
+    const tableSize = this.personnes.length - 1;
+    personne.id = this.personnes[tableSize]['id'] + 1;
+    this.personnes.push(personne);
+  }
 }
